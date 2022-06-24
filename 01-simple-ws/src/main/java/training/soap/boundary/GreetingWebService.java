@@ -1,7 +1,7 @@
 package training.soap.boundary;
 
-import jakarta.jws.WebMethod;
-import jakarta.jws.WebService;
+import javax.jws.WebMethod;
+import javax.jws.WebService;
 
 @WebService(targetNamespace = "http://auinger.de/GreetingWebService")
 public interface GreetingWebService {

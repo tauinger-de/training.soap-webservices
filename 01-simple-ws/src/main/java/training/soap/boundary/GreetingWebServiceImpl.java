@@ -1,6 +1,6 @@
 package training.soap.boundary;
 
-import jakarta.jws.WebService;
+import javax.jws.WebService;
 
 @WebService(
         serviceName = "GreetingWebService",
