@@ -12,6 +12,10 @@
     <modules>
         <module>01-simple-ws</module>
     </modules>
+    
+    <properties>
+        <version.wildfly.maven.plugin>2.0.2.Final</version.wildfly.maven.plugin>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -25,4 +29,16 @@
             <version>3.0.2</version>
         </dependency>
     </dependencies>
+    
+    <build>
+       <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.wildfly.plugins</groupId>
+                    <artifactId>wildfly-maven-plugin</artifactId>
+                    <version>${version.wildfly.maven.plugin}</version>
+                </plugin>
+            </plugins>
+       </pluginManagement>
+    </build>
 </project>
