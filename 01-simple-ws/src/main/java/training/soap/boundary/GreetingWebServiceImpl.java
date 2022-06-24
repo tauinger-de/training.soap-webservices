@@ -1,5 +1,8 @@
 package training.soap.boundary;
 
+import training.soap.business.GreetingService;
+
+import javax.inject.Inject;
 import javax.jws.WebService;
 
 @WebService(
@@ -8,8 +11,11 @@ import javax.jws.WebService;
 )
 public class GreetingWebServiceImpl implements GreetingWebService {
 
+    @Inject
+    private GreetingService greetingService;
+
     @Override
     public String sayHello(String name) {
-        return "Hello " + name;
+        return greetingService.createGreeting(name);
     }
 }
