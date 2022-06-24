@@ -1,4 +1,4 @@
-package training.soap;
+package training.soap.business;
 
 public class GreetingService {
 
