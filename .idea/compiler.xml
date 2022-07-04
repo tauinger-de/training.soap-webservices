@@ -8,8 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="tiny-ws" />
         <module name="simple-ws" />
-        <module name="01-simple-ws" />
+        <module name="03-xml-schema" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="01-simple-ws" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
